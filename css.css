@@ -1,40 +1,52 @@
 * {margin:0; padding:0;}
 @font-face {
-    font-family: ProximaNova; /* имя шрифта для CSS правил */
-    src: local("ProximaNova"), /* проверяем наличие шрифта в ОС пользователя */
-         url(ProximaNova-Reg.otf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
-  }
+    font-family: "ProximaNovaRegular";
+    src: url("fonts/ProximaNovaRegular.eot");
+    src: url("fonts/ProximaNovaRegular.eot?#iefix")format("embedded-opentype"),
+    url("fonts/ProximaNovaRegular.woff") format("woff"),
+    url("fonts/ProximaNovaRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
 html {}
-body {font-family:"Tahoma";}
-header, .content, main, footer {max-width:1280px; margin:0 auto; /*position:relative; */clear:both; padding:0 2%; /*min-width:1000px;*/}
+body {font-family: "ProximaNovaRegular", sans-serif;}
+header, .content, main, footer {max-width:966px; min-width:966px; margin:0 auto;clear:both; position:relative;}
 img {	max-width: 100%;	width: auto \9;	height: auto;	vertical-align: middle;	border: 0;	-ms-interpolation-mode: bicubic;}
 a {color:#7f7f7f; text-decoration:none;}
-#logo {width:34.24027%;}
+#logo {width:34.24027%; margin-top:60px;}
 li {list-style: none;}
-ul.topnav {float:right; width:12.816%; margin-bottom:2em;}
-ul.topnav li {display:block; position:relative}
-ul.topnav li a {font-size:0.875em; letter-spacing:0.3em; color:#7f7f7f; line-height:2em; text-decoration: none; padding:3px;}
-ul.topnav li a:hover {background:#dedede;} 
-ul.topnav ul {opacity:0; visibility:hidden; position:absolute; top: 0; right:147.681%;}
-ul.topnav li ul li a {color:#000;}
-ul.topnav > li:hover > ul {opacity:1; visibility:visible; } 
-#btn-eshop {display:inline-block; position:absolute; margin-top: 5%; margin-left:3%; }
+/*верхнее меню*/
+ul#topnav {float:right; width:130px; margin-top:-30px; right:0;}
+ul#topnav li {display:block; position:relative; text-align: center; margin-bottom:30px; }
+ul#topnav li a {font-size:0.875em; letter-spacing:0.3em; color:#7f7f7f; text-decoration: none; padding:3px;}
+ul#topnav li a:hover {border:1px solid #000;}
+ul#topnav li.active > a {background:#dedede;} 
+ul#topnav ul.unvisible {display:none; position:absolute; top: 0; right:130px;}
+
+ul#topnav li > ul > li > a {color:#000;}
+ul#topnav > li:hover > ul, ul.visible {visibility:visible; display: block;  position:absolute; top: 0; right:130px; width:100px;}
+ul.visible li.selected a {background:#dedede;}
+
+#btn-eshop {display:inline-block; float:left; margin-top: 68px; margin-left:2%; font-size:14px;}
+#btn-eshop img {margin-right:10px;}
 .slideshow {position:relative;}
-.left-bl {float:left; width:53.828%; margin-right:8.691%; padding-top:5%;}
-.left-bl-shop {    float: left;    margin-right: 2.691%; width: 59.828%;}
-.right-bl {width:37.179%; float:right; padding-top:5%;}
-footer { color:#7f7f7f; font-size:0.75em; padding-top:8.2525%; margin-bottom:4.1212%; padding-right:5%; text-align:right;}
+.left-bl {float:left; width:53.828%; margin-right:8.691%;}
+.left-bl-shop {    float: left;    margin-right: 2.691%; width: 57.828%; margin-left:15px;}
+.right-bl {width:37.179%; float:right; padding-top:3%;}
+footer { color:#7f7f7f; font-size:0.75em; padding-top:7.2525%; margin-bottom:4.1212%; padding-right:5%; text-align:right;}
 footer img {margin:0 2% 0 0;}
-.content .zag {text-transform:uppercase; color:#000; font-size:1.5em; margin-bottom:1em;}
-.content .sub-zag {color:#7f7f7f; font-size:0.875em; margin-bottom:1.5em;}
+.content .zag {text-transform:uppercase; color:#000; font-size:1.5em; margin-bottom:12px; letter-spacing:0.41875em;}
+.content .zag2 {text-transform:uppercase; color:#000; font-size:1.125em; margin-bottom:12px; letter-spacing:0.3125em;}
+.content .sub-zag {color:#7f7f7f; font-size:0.875em; margin-bottom:56px;}
 .content p {color:#000; line-height:1.5em; font-size:0.875em; margin-bottom:1.5em;}
-.cont-lbl {color:#7f7f7f; font-size:0.875em; margin-bottom:1.5em; margin-left:15%;}
-.cont-data {color:#000; font-size:1.5em; margin-bottom:1.5em; margin-left:15%;}
+.cont-lbl {color:#7f7f7f; font-size:0.875em; margin-bottom:1.5em; margin-top:22px; margin-left:20%;}
+.cont-data {color:#000; font-size:1.5em; margin-bottom:1.5em; margin-left:20%;}
 .bx-wrapper {position:relative;}
 .bx-viewport {float:right;}
-.bx-viewport {margin-top:-100px; width:77.289% !important; float:right; margin-left:1%; position:relative; overflow:hidden;}
+.bx-viewport {margin-top:-85px; width:77.289% !important; float:right; margin-left:1%; position:relative; overflow:hidden;}
 .bx-pager-item {margin:0 0 10% 0;}
 .bx-pager-item a img {opacity:0.5;}
+.bx-pager-item a img:hover, .bx-pager-item a img:focus {opacity:0.75;}
 .bx-pager-item a.active img {opacity:1;}
 .bx-controls {width:20.648%;}
 .desc {float:right; width:46.289%;}
@@ -44,15 +56,21 @@ footer img {margin:0 2% 0 0;}
 /*стили форм*/
 input[type=text], textarea {display:block; color:#7f7f7f; font-size:0.875em; clear:both; width:80%;
 border-top:0; border-left:0; border-right:0; border-bottom:1px solid #000; padding:2% 0; margin-bottom:1.5em;
-font-family:"arial";}
+}
 input[type=submit] {width:40.5027%; border:1px solid #7f7f7f; color:#7f7f7f; background:#fff;
- padding:1%; text-transform:uppercase; letter-spacing:0.2em; }
+ padding:1%; text-transform:uppercase;  letter-spacing:0.24375em; }
 textarea:-moz-placeholder, 
 textarea::-webkit-input-placeholder,
 input:-moz-placeholder, 
 input::-webkit-input-placeholder {color:#7f7f7f; font-size:0.875em;}
 input[type=submit]:hover {cursor:pointer;}
-/** Glidejs styles **/
+textarea:focus, input:focus{outline: none;}
+
+/*стили неактивной формы*/
+
+input.disabled {border:1px solid #9f9e9e; color:#9f9e9e;}
+
+/** слайдер **/
 .slider {
 	position: relative;
 	width: 100%;
@@ -81,7 +99,7 @@ input[type=submit]:hover {cursor:pointer;}
   text-align: center;
 }
 .slide figure figcaption {
-position:absolute;  top:45%; left:42%; text-transform:uppercase; color:#fff; font-size:0.875em; letter-spacing:0.3em; border:1px solid #fff; padding:0.5% 1%;
+position:absolute;  top:45%; left:39%; text-transform:uppercase; color:#fff; font-size:0.875em; letter-spacing:0.3em; border:1px solid #fff; padding:0.5% 1%;
 }
 .slide figure figcaption a {
   color: #fff;
@@ -99,8 +117,8 @@ position:absolute;  top:45%; left:42%; text-transform:uppercase; color:#fff; fon
   transition: all 0.2s linear;
 }
 .slider-arrow:hover {}
-.slider-arrow--right,  .bx-next { bottom: 50%; right: 0px;  background: url('images/arr-right.png') no-repeat;}
-.slider-arrow--left, .bx-prev { bottom: 50%; left: 30px; background: url('images/arr-left.png') no-repeat;}
+.slider-arrow--right,  .bx-next { bottom: 50%; right: 180px;  background: url('images/arr-right.png') no-repeat;}
+.slider-arrow--left, .bx-prev { bottom: 50%; left:180px; background: url('images/arr-left.png') no-repeat;}
 .bx-prev {position:absolute; top:40%; left:26%; width:31px; z-index: 100000;}
 .bx-next {position:absolute; top:40%; right:3%;  width:31px; z-index: 100000;}
 .slider-nav {
@@ -121,7 +139,7 @@ position:absolute;  top:45%; left:42%; text-transform:uppercase; color:#fff; fon
 }
 .slider-nav__item:hover { background: #bababa; }
 .slider-nav__item--current, .slider-nav__item--current:hover { background: #999; }
-
+.slider-nav {display:none;}
 /** responsive styles **/
 @media screen and (max-width: 1050px) {
   #w { padding: 0 15px; }

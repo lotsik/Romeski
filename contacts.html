@@ -5,6 +5,15 @@
 <meta http-equiv="cache-control"   content="no-cache" />
 <meta name="viewport" content="width=device-width, initial-scale=0.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 <link rel="stylesheet" href="css.css" type="text/css" />
+ <script language="JavaScript">
+<!--
+var f=document.mainForm;
+function changeButtonStatus(){
+f.formSend.disabled=(f.name.value && f.subject.value) ? false : true;
+}
+changeButtonStatus();
+//-->
+</script> 
 </head>
 
 
@@ -15,15 +24,14 @@
 <div id="logo"><a href="main.html" title=""><img src="images/logo.png" /></a></div>
 <div id="btn-eshop"><a href="page.html"><img src="images/ico-eshop.png" />E-SHOP</a></div>
  <nav>
-  <ul class="topnav">
+  <ul id="topnav">
     <li><a href="page.html">КОЛЛЕКЦИИ</a>
-      <ul>
-         <li><a href="#">SS2014</a></li><li><a href="#">FW2015</a><li><a href="#">SS2016</a></li></ul>
+      <ul id="subnav" class="unvisible">
+         <li><a href="#">SS2014</a></li><li><a href="page.html">FW2015</a><li><a href="#">SS2016</a></li></ul>
      </li>
    <li><a href="about.html">О БРЕНДЕ</a></li>
-   <li><a href="contacts.html">КОНТАКТЫ</a></li>
-   <li><a href="page.html">E-SHOP</a></li>
-  </ul>
+   <li class="active"><a href="contacts.html">КОНТАКТЫ</a></li>
+ </ul>
  </nav>
  </header>
  <div class="content">
@@ -43,17 +51,17 @@
 
 <div class="sub-zag"></div>
 
-<form>
+<form name="maiForm">
 
-<input type="text" placeholder="Введите Ваше имя*" />
+<input type="text" placeholder="Введите Ваше имя*" onkeyup="changeButtonStatus()" onchange="changeButtonStatus()" />
 
-<input type="text" placeholder="Введите Ваш email*"/>
+<input type="text" placeholder="Введите Ваш email*" onkeyup="changeButtonStatus()" onchange="changeButtonStatus()"/>
 
-<input type="text" placeholder="Введите Ваш номер телефона*"/>
+<input type="text" placeholder="Введите Ваш номер телефона*" onkeyup="changeButtonStatus()" onchange="changeButtonStatus()"/>
 
-<textarea placeholder="Введите Ваше сообщение*"></textarea>
+<textarea placeholder="Введите Ваше сообщение*" onkeyup="changeButtonStatus()" onchange="changeButtonStatus()"></textarea>
 
-<input type="submit" value="Отправить" />
+<input class="disabled" type="submit" value="Отправить" name="formSend" disabled="disabled" />
 
 </form>
 

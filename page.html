@@ -17,14 +17,14 @@
 <div id="logo"><a href="main.html" title=""><img src="images/logo.png" /></a></div>
 <div id="btn-eshop"><a href="page.html"><img src="images/ico-eshop.png" />E-SHOP</a></div>
  <nav>
-  <ul class="topnav">
-    <li><a href="page.html">КОЛЛЕКЦИИ</a>
-      <ul>
-         <li><a href="#">SS2014</a></li><li><a href="#">FW2015</a><li><a href="#">SS2016</a></li></ul>
+  <ul id="topnav">
+    <li class="active"><a href="page.html">КОЛЛЕКЦИИ</a>
+      <ul id="subnav" class="visible">
+         <li><a href="#">SS2014</a></li><li class="selected"><a href="page.html">FW2015</a><li><a href="#">SS2016</a></li></ul>
      </li>
    <li><a href="about.html">О БРЕНДЕ</a></li>
    <li><a href="contacts.html">КОНТАКТЫ</a></li>
-   <li><a href="#">E-SHOP</a></li>
+
   </ul>
  </nav>
  </header>
@@ -72,11 +72,10 @@ $('.bxslider').bxSlider({
 
 <div class="description">Эксклюзивный свитер с асимметричными вырезами длиной до колена</div>
 
-<div class="mat">Материалы: 50% <br /> вискоза 50% <br /> шерсть</div>
-<br /><br /><br />
-<div class="zag">ФОРМА ЗАКАЗА</div>
+<div class="mat">Материалы:<br /> 50% вискоза<br /> 50% шерсть</div>
 
-<div class="sub-zag"></div>
+<div class="zag2">ФОРМА ЗАКАЗА</div>
+
 
 <form>
 
@@ -86,9 +85,7 @@ $('.bxslider').bxSlider({
 
 <input type="text" placeholder="Введите Ваш номер телефона*" autofocus=""/>
 
-<textarea placeholder="Введите Ваше сообщение*" autofocus=""></textarea>
-
-<input type="submit" value="Отправить" />
+<input type="submit" value="Отправить" class="disabled" />
 
 </form>
 
@@ -99,7 +96,8 @@ $('.bxslider').bxSlider({
 </main>
 
 </div>
-<footer><a href="#"><img src="images/vk.png" /></a><a href="#"><img src="images/facebook.png" /></a><a href="#"><img src="images/instagram.png" /></a>© 2015 CATE ROMENSKI All rights reserved </footer>
+<footer><a href="#"><img src="images/vk.png" /></a><a href="#"><img src="images/facebook.png" /></a>
+<a href="#"><img src="images/instagram.png" /></a>© 2015 CATE ROMENSKI All rights reserved </footer>
 
 
 

@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<head>
+<title>Main</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="cache-control"   content="no-cache" />
+<meta name="viewport" content="width=device-width, initial-scale=0.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+<link rel="stylesheet" href="css.css" type="text/css" />
+<link href='//fonts.googleapis.com/css?family=ProximaNova' rel='stylesheet' type='text/css' />
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="js/jquery.glide.min.js"></script>
+
+</head>
+
+
+<body>
+
+
+<header>
+<div id="logo"><a href="main.html" title=""><img src="images/logo.png" /></a></div>
+<div id="btn-eshop"><a href="page.html"><img src="images/ico-eshop.png" />E-SHOP</a></div>
+ <nav>
+  <ul class="topnav">
+    <li><a href="page.html">КОЛЛЕКЦИИ</a>
+      <ul>
+         <li><a href="#">SS2014</a></li><li><a href="#">FW2015</a><li><a href="#">SS2016</a></li></ul>
+     </li>
+   <li><a href="about.html">О БРЕНДЕ</a></li>
+   <li><a href="contacts.html">КОНТАКТЫ</a></li>
+   <li><a href="page.html">E-SHOP</a></li>
+  </ul>
+ </nav>
+ </header>
+
+<div class="content">
+<main>
+
+  <div class="slider">
+      <ul class="slides">
+        <li class="slide">
+          <figure>
+            <figcaption><a href="page.html">показать модели</a></figcaption>
+            <img src="images/1.jpg" />
+          </figure>
+        </li>
+        <li class="slide">
+          <figure>
+            <figcaption><a href="page.html">показать модели</a></figcaption>
+            <img src="images/1.jpg" />
+          </figure>
+        </li>
+        <li class="slide">
+          <figure>
+            <figcaption><a href="page.html">показать модели</a></figcaption>
+            <img src="images/1.jpg" />
+          </figure>
+        </li>
+      </ul>
+    </div><!-- @end .slider -->
+<script type="text/javascript">
+$(function(){
+  $('.slider').glide({
+    autoplay: 3500,
+    hoverpause: true, // set to false for nonstop rotate
+    arrowRightText: '',
+    arrowLeftText: ''
+  });
+});
+</script>
+
+
+</main>
+
+</div>
+
+
+<footer><a href="#"><img src="images/vk.png" /></a><a href="#"><img src="images/facebook.png" /></a><a href="#"><img src="images/instagram.png" /></a>© 2015 CATE ROMENSKI All rights reserved </footer>
+
+
+
+</body>
+
+</html>

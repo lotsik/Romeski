@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<head>
+<title>Collection</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="cache-control"   content="no-cache" />
+<meta name="viewport" content="width=device-width, initial-scale=0.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+<link rel="stylesheet" href="css.css" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+</head>
+
+
+<body>
+
+
+<header>
+<div id="logo"><a href="main.html" title=""><img src="images/logo.png" /></a></div>
+<div id="btn-eshop"><a href="page.html"><img src="images/ico-eshop.png" />E-SHOP</a></div>
+ <nav>
+  <ul class="topnav">
+    <li><a href="page.html">КОЛЛЕКЦИИ</a>
+      <ul>
+         <li><a href="#">SS2014</a></li><li><a href="#">FW2015</a><li><a href="#">SS2016</a></li></ul>
+     </li>
+   <li><a href="about.html">О БРЕНДЕ</a></li>
+   <li><a href="contacts.html">КОНТАКТЫ</a></li>
+   <li><a href="#">E-SHOP</a></li>
+  </ul>
+ </nav>
+ </header>
+ <div class="content">
+<main>
+
+<div class="left-bl-shop">
+<ul class="bxslider">
+  <li><img src="images/3.jpg" /></li>
+  <li><img src="images/3.jpg" /></li>
+  <li><img src="images/3.jpg" /></li>
+  <li><img src="images/3.jpg" /></li>
+  <li><img src="images/3.jpg" /></li>
+  <li><img src="images/3.jpg" /></li>
+</ul>
+
+
+<script type="text/javascript">
+$('.bxslider').bxSlider({
+  buildPager: function(slideIndex){
+    
+    switch(slideIndex){
+      case 0:
+        return '<img src="images/prew150.jpg" />';
+      case 1:
+        return '<img src="images/prew150.jpg" />';
+      case 2:
+        return '<img src="images/prew150.jpg" />';
+      case 3:
+        return '<img src="images/prew150.jpg" />';
+      case 4:
+        return '<img src="images/prew150.jpg" />';
+      case 5:
+        return '<img src="images/prew150.jpg" />';
+    }
+  }
+});
+</script>
+</div>
+<div class="right-bl">
+
+<div class="zag">СВИТЕР С ВЫРЕЗАМИ</div>
+
+<div class="kod">Код модели: ROM12345</div>
+
+<div class="description">Эксклюзивный свитер с асимметричными вырезами длиной до колена</div>
+
+<div class="mat">Материалы: 50% <br /> вискоза 50% <br /> шерсть</div>
+<br /><br /><br />
+<div class="zag">ФОРМА ЗАКАЗА</div>
+
+<div class="sub-zag"></div>
+
+<form>
+
+<input type="text" placeholder="Введите Ваше имя*" autofocus=""/>
+
+<input type="text" placeholder="Введите Ваш email*" autofocus=""/>
+
+<input type="text" placeholder="Введите Ваш номер телефона*" autofocus=""/>
+
+<textarea placeholder="Введите Ваше сообщение*" autofocus=""></textarea>
+
+<input type="submit" value="Отправить" />
+
+</form>
+
+
+
+</div>
+
+</main>
+
+</div>
+<footer><a href="#"><img src="images/vk.png" /></a><a href="#"><img src="images/facebook.png" /></a><a href="#"><img src="images/instagram.png" /></a>© 2015 CATE ROMENSKI All rights reserved </footer>
+
+
+
+</body>
+
+</html>

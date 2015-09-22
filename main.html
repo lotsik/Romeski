@@ -6,14 +6,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=0.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 <link rel="stylesheet" href="css.css" type="text/css" />
 <link href='//fonts.googleapis.com/css?family=ProximaNova' rel='stylesheet' type='text/css' />
-  <script src="js/jquery-1.10.2.min.js"></script>
-  <script src="js/jquery.glide.min.js"></script>
-
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<script src="js/modernizr.custom.js"></script>
 </head>
-
-
 <body>
-
 
 <header>
 <div id="logo"><a href="main.html" title=""><img src="images/logo.png" /></a></div>
@@ -29,53 +25,36 @@
   </ul>
  </nav>
  </header>
-
-<div class="content">
-<main>
-
-  <div class="slider">
-      <ul class="slides">
-        <li class="slide">
-          <figure>
-            <figcaption><a href="page.html">показать модели</a></figcaption>
-            <img src="images/1.jpg" />
-          </figure>
-        </li>
-        <li class="slide">
-          <figure>
-            <figcaption><a href="page.html">показать модели</a></figcaption>
-            <img src="images/1.jpg" />
-          </figure>
-        </li>
-        <li class="slide">
-          <figure>
-            <figcaption><a href="page.html">показать модели</a></figcaption>
-            <img src="images/1.jpg" />
-          </figure>
-        </li>
-      </ul>
-    </div><!-- @end .slider -->
-<script type="text/javascript">
-$(function(){
-  $('.slider').glide({
-    autoplay: 3500,
-    hoverpause: true, // set to false for nonstop rotate
-    arrowRightText: '',
-    arrowLeftText: ''
-  });
-});
-</script>
+		<div class="container">
+        
 
 
-</main>
-
-</div>
-
-
-<footer><a href="#"><img src="images/vk.png" /></a><a href="#"><img src="images/facebook.png" /></a><a href="#"><img src="images/instagram.png" /></a>© 2015 CATE ROMENSKI All rights reserved </footer>
-
-
-
+			<div class="main">
+				<ul id="cbp-bislideshow" class="cbp-bislideshow">
+					<li><img src="images/1.jpg" alt="image01"/></li>
+					<li><img src="images/2.jpg" alt="image02"/></li>
+					<li><img src="images/3.jpg" alt="image03"/></li>
+					<li><img src="images/4.jpg" alt="image04"/></li>
+				</ul>
+				<div id="cbp-bicontrols" class="cbp-bicontrols">
+					<span class="cbp-biprev"><img src="images/arr-left.png" alt=""/></span>
+					<span class="cbp-bipause1"><a href="page.html">показать модели</a></span>
+					<span class="cbp-binext"><img src="images/arr-right.png" alt=""/></span>
+				</div>
+			</div>
+          <div class="main-fon"></div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/jquery.imagesloaded.min.js"></script>
+		<script src="js/cbpBGSlideshow.js"></script>
+		<script>
+			$(function() {
+				cbpBGSlideshow.init();
+			});
+		</script>
+<footer>
+<a href="#"><img src="images/vk.png" /></a>
+<a href="#"><img src="images/facebook.png" /></a>
+<a href="#"><img src="images/instagram.png" /></a>© 2015 CATE ROMENSKI All rights reserved </footer>
 </body>
-
 </html>

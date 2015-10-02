@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="7px" height="13px" viewBox="0 0 7 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>facebook@svg</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="ROMENSKI-Главная-(выпадающее-меню-при-наведении)" sketch:type="MSArtboardGroup" transform="translate(-883.000000, -950.000000)" fill="#9B9B9B">
+            <g id="social" sketch:type="MSLayerGroup" transform="translate(850.000000, 950.000000)">
+                <path d="M39.436,4.25 L39.213,6.502 L37.496,6.502 L37.496,12.876 L34.95,12.876 L34.95,6.502 L33.739,6.502 L33.739,4.25 L34.95,4.25 L34.95,2.793 C34.95,1.75 35.425,0.12 37.518,0.12 L39.404,0.128 L39.404,2.314 L38.035,2.314 C37.812,2.314 37.496,2.43 37.496,2.927 L37.496,4.25 L39.436,4.25" id="facebook" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

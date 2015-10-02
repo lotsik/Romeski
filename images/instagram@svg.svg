@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="12px" height="13px" viewBox="0 0 12 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>instagram@svg</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="ROMENSKI-Главная-(выпадающее-меню-при-наведении)" sketch:type="MSArtboardGroup" transform="translate(-906.000000, -950.000000)" fill="#9B9B9B">
+            <g id="social" sketch:type="MSLayerGroup" transform="translate(850.000000, 950.000000)">
+                <path d="M65.194,0.828 L58.216,0.828 C57.005,0.828 56.036,1.797 56.036,3.009 L56.036,9.986 C56.036,11.198 57.005,12.167 58.216,12.167 L65.194,12.167 C66.405,12.167 67.375,11.198 67.375,9.986 L67.375,3.009 C67.375,1.797 66.405,0.828 65.194,0.828 L65.194,0.828 Z M65.824,2.137 L66.066,2.137 L66.066,4.075 L64.128,4.075 L64.128,2.137 L65.824,2.137 L65.824,2.137 Z M60.106,5.335 C60.445,4.85 61.075,4.511 61.705,4.511 C62.335,4.511 62.965,4.85 63.304,5.335 C63.547,5.674 63.692,6.062 63.692,6.498 C63.692,7.612 62.771,8.484 61.705,8.484 C60.639,8.484 59.719,7.612 59.719,6.498 C59.719,6.062 59.864,5.674 60.106,5.335 L60.106,5.335 Z M66.26,9.986 C66.26,10.568 65.775,11.052 65.194,11.052 L58.216,11.052 C57.635,11.052 57.15,10.568 57.15,9.986 L57.15,5.335 L58.846,5.335 C58.701,5.674 58.604,6.11 58.604,6.498 C58.604,8.194 60.009,9.599 61.705,9.599 C63.401,9.599 64.806,8.194 64.806,6.498 C64.806,6.11 64.71,5.674 64.564,5.335 L66.26,5.335 L66.26,9.986 L66.26,9.986 Z" id="instagram" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="31px" height="59px" viewBox="0 0 31 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>стрелка вправо@svg</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="ROMENSKI-Главная-(выпадающее-меню-при-наведении)" sketch:type="MSArtboardGroup" transform="translate(-990.000000, -491.000000)" fill="#17FFD5">
+            <g id="слайдер" sketch:type="MSLayerGroup" transform="translate(237.000000, 156.000000)">
+                <path d="M755.595217,335.948448 C754.99795,335.350517 754.03695,335.350517 753.44795,335.948448 C752.850683,336.546379 752.850683,337.508448 753.44795,338.098103 L779.709083,364.380172 L753.44795,390.662241 C752.850683,391.251897 752.850683,392.213966 753.44795,392.811897 C753.747617,393.111897 754.134083,393.256724 754.522617,393.256724 C754.909083,393.256724 755.297617,393.111897 755.595217,392.811897 L782.92275,365.447759 C783.520017,364.849828 783.520017,363.896034 782.92275,363.298103 L755.595217,335.948448" id="стрелка-вправо" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
